@@ -1,0 +1,380 @@
+/***
+* screen
+*/
+@keyframes underline_center{
+	from{
+		width: 0%;
+		margin: 0 auto; 
+	}
+	to{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+/***
+* screen
+*/
+
+/****
+ * tab
+ */
+ @keyframes underline_1{
+  from{
+    width: 0%; 
+  }
+  to{
+    width: 100%;
+  }
+}
+
+@keyframes width_band{
+  from{
+    width: 0;
+  }
+  to{
+    width: 30vh;
+  }
+}
+
+@keyframes width_band-reverse{
+  from{
+    width: 30vh;
+  }
+  to{
+    width: 0;
+  }
+}
+/***
+ * tab
+ */
+
+/***
+ * phone
+ */
+
+@keyframes cover_1{
+	from{
+		clip-path: circle(0 at 100% 0);
+	}
+	to{
+		clip-path: circle(130% at 100% 0);
+	}
+}
+
+@keyframes cover_1-reverse{
+	from{
+		clip-path: circle(130% at 100% 0);
+	}
+	to{
+		clip-path: circle(0 at 100% 0);
+	}
+}
+
+/***
+ * phone
+ */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 13px;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+#menu-grande{
+	display: none;
+}
+
+#menu-tab{
+	display: none;
+}
+
+#menu-phone{
+	display: none;
+}
+
+#hamburger-1{
+	display: none;
+}
+
+#langue-phone{
+	display: none;
+}
+
+header{
+	z-index: 5; 
+}
+
+/*****
+ * screen
+ ***/
+@media only screen and (min-width: 1025px)
+{
+	header{
+		height: 10vh;
+		position: fixed;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
+	header nav{
+		padding-top: 1em;
+	}
+
+	header nav #menu-grande{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	header nav #menu-grande li{
+		line-height: 1.5;
+		letter-spacing: 1px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin: 0 2em;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	header nav #menu-grande li:hover{
+		opacity: 0.5;
+	}
+
+	header nav #menu-grande li a{
+		color: #6d071a;
+	}
+
+	.anim_under:hover:after{
+		content: "";
+		display: flex;
+		animation-duration: 1.5s;
+		animation-name: underline_center;
+		border-bottom: solid 2px #6d071a;;
+	}
+}
+
+/*****
+ * screen
+ ***/
+ 
+ @media only screen and (min-width: 601px) and (max-width: 1024px){
+ 	header{
+  		position: fixed;
+ 	 	z-index: 3;
+	}
+	header nav #menu-tab{
+  		display: flex;
+  		flex-direction: row;
+	}
+
+	header #menu-tab div{
+    	padding-left: 2em;
+    	padding-top: 9vh;
+    	width: 30vh;
+    	background: linear-gradient(#8c2327 0%, 60% ,#0075ff);
+    	height: 100vh;
+    	display: none;
+	}
+
+	header p{
+  		margin-top: 2em;
+  		font-size: 14px;
+  		font-weight: 600;
+  		font-family: Montserrat,Arial, Helvetica, sans-serif;
+  		color: white;
+	}
+
+	header nav #menu-tab ul li{
+    	margin-top: 1.5em;
+    	padding-left: 3em;
+    	width: 13em;
+	}
+
+	header nav #menu-tab ul li a{
+  		font-size: 13px;
+  		font-weight: 400;
+  		font-family: Montserrat,Arial, Helvetica, sans-serif;
+  		color: white;
+	}
+
+	#menu li a:hover:after{
+  		display: flex;
+  		justify-content: center;
+  		content: "";
+  		border-bottom: 1px solid black;
+  		animation-duration: 1.5s;
+  		animation-name: underline_1;
+	}
+
+	.animation_2{
+  		animation-duration: 0.3s;
+  		animation-name: width_band;
+	}
+
+	.animation_3{
+  		animation-duration: 0.3s;
+  		animation-name: width_band-reverse;
+	}
+
+
+	/* -----
+	SVG Icons - svgicons.sparkk.fr
+	----- */
+
+	#hamburger {
+  		width: 2em;
+  		height: 2em;
+  		margin-top: 1em;
+  		margin-left: 1em;
+  		cursor: pointer;
+  		z-index: 2;
+	}
+
+	#hamburger path,
+	#hamburger polygon,
+	#hamburger rect {
+  		fill: #4691f6;
+	}
+
+	#hamburger circle {
+  		stroke: #4691f6;
+  		stroke-width: 1;
+	}
+	/* ----------
+	SVG icons - end 
+	------------- */
+
+
+	/* -----
+	SVG Icons - svgicons.sparkk.fr
+	----- */
+
+	#cross {
+  		z-index: 2;
+  		width: 2em;
+  		height: 2em;
+  		margin-top: 1em;
+  		margin-left: 1em;
+  		cursor: pointer;
+  		display: none;
+	}
+
+	#cross path,
+	#cross polygon,
+	#cross rect {
+  		fill: black;
+	}
+
+	#cross circle {
+  		stroke: black;
+  		stroke-width: 1;
+	}
+	/* ----------
+	SVG icons - end 
+	------------- */
+ 	.opa{
+  		opacity: 0.4;
+	}
+ }
+
+ @media only screen and (max-width: 600px){
+
+ 	header{
+		position: fixed;
+		width: 100%;
+	}
+
+	header nav{
+		background: linear-gradient(#8c2327 0%, 60% ,#0075ff);
+		padding-top: 5%;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		clip-path: circle(130% at 100% 0);
+		overflow: hidden;
+		display: none;
+	}
+
+	header nav #menu-phone{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	header nav #menu-phone li{
+		text-align: center;
+	}
+
+	header nav #menu-phone a{
+		font-size: 14px;
+		text-transform: uppercase;
+		font-family: Montserrat,Arial, Helvetica, sans-serif;
+		font-weight: 600;
+		color: white;
+	}
+
+	header #hamburger-1{
+		position: absolute;
+		right: -2em;
+		top: 2em;
+	}
+
+	header #langue-phone{
+		position: absolute;
+		display: block;
+		right: 6em;
+		top: 1.8em;
+	}
+
+	.cover_1{
+		animation-duration: 1.5s;
+		animation-name: cover_1;
+	}
+
+	.cover_1-reverse{
+		animation-duration: 1.5s;
+		animation-name: cover_1-reverse;
+	}
+
+	/* -----
+	SVG Icons - svgicons.sparkk.fr
+	----- */
+
+	#hamburger-1 {
+		display: block;
+  		width: 2em;
+  		height: 2em;
+ 	 	margin-top: -0.5em;
+  		margin-right: 4em;
+  		cursor: pointer;
+	}
+
+	#hamburger-1 path,
+	#hamburger-1 polygon,
+	#hamburger-1 rect {
+  		fill: #4691f6;
+	}
+
+	#hamburger-1 circle {
+  		stroke: #4691f6;
+  		stroke-width: 1;
+	}
+	/* ----------
+	SVG icons - end 
+	------------- */
+
+	.add_flex{
+		display: flex !important;
+	}
+ }

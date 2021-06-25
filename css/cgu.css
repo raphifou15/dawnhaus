@@ -1,0 +1,33 @@
+#block-before{
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 1025px){
+  #block-before img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+    h1{
+      font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  h1{
+      font-size: 16px;
+  } 
+}

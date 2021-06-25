@@ -1,0 +1,99 @@
+
+#block-before{
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+#section1{
+    margin-top: 2em;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#section1 h1{
+  font-size: 21px;
+  margin-bottom: 3em;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+}
+
+#section1 p{
+  font-size: 16px;
+  margin-bottom: 1em;
+  color: #6d071a;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+#section2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.env-icon {
+  width: 7em;
+  height: 7em;
+  margin-bottom: 3em;
+}
+
+.env-icon path,
+.env-icon polygon,
+.env-icon rect {
+  fill: black;
+}
+
+.env-icon circle {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.no-wrap{
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 1025px){
+  #block-before img{
+    display: none;
+  }
+}
+
+ @media only screen and (max-width: 1024px){
+    #section1 h1{
+      font-size: 17px;
+    }
+
+    #section1 p{
+      font-size: 13px;
+    }
+ }
+
+ @media only screen and (max-width: 700px){
+  #section2{
+    flex-direction: column;
+  }
+ }
+
+  @media only screen and (max-width: 600px){
+      #section1 h1{
+      font-size: 16px;
+    }
+
+    #section1 p{
+      font-size: 13px;
+    }
+  }
