@@ -10,4 +10,4 @@ Ceci est mon tout premier projet en freelance. Il s'agit d'un site vitrine qui a
 - javascript : pour l'interactivité.
 
 ## Présentation en video
-![Démo du site](dawn.gif)
+![Démo du site](https://github.com/raphifou15/dawnhaus/blob/main/dawn.gif)
