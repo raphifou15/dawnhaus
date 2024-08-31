@@ -12,6 +12,4 @@ Ceci est mon tout premier projet en freelance. Il s'agit d'un site vitrine qui a
 
 ## Présentation en video
 
-<!-- ![Démo du site](https://github.com/raphifou15/dawnhaus/blob/main/dawn.gif) -->
-
-![partie1](part1.gif)
+![Démo du site](dawn2.gif)
